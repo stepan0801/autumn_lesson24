@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lesson_24</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+			</header>
+			<main class="page">
+				<div class="page__functions functions">
+					<div class="functions__container">
+						<h2 class="functions__main-tittle">Функції</h2>
+						<div class="functions__task">
+							<h2 class="functions__tittle">Завдання 1</h2>
+							<p class="functions__paragraph">Першим в онсоль потрапить 'Коля!', так як функції задано setTimeout з нульовою затримкою</p>
+						</div>
+						<div class="functions__task">
+							<h2 class="functions__tittle">Завдання 2</h2>
+							<p class="functions__paragraph">Функція визвана вірно, оскільки при виразі fucntion-declaration її можна викликати, як до об'яви, та і після.</p>
+						</div>
+						<div class="functions__task">
+							<h2 class="functions__tittle">Завдання 3</h2>
+							<p class="functions__paragraph">Функція визвана не вірно, оскільки при виразі fucntion-expression її можна викликати тільки після об'яви.</p>
+						</div>
+						<div class="functions__task">
+							<h2 class="functions__tittle">Завдання 4</h2>
+							<p class="functions__paragraph">функція викликана за межами видимості логічного оператора if. <br>
+								Вирішити проблему можна наступним чином(запсисати у формі fucntion-expression):<br>
+								let showMessage = function () {<br>
+								if (2 > 1) {<br>
+								console.log('Повідомлення');<br>
+								}<br>
+								}<br>
+								showMessage();
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="page__array array">
+					<div class="array__container">
+						<h2 class="array__main-tittle">Масиви</h2>
+						<div class="array__task">
+							<h2 class="array__tittle">Задача 1</h2>
+							<p class="array__paragraph">Довжина масиву складе 4, адже методом 'push' ми додали в кінець масиву елемент "Петро"</p>
+						</div>
+						<div class="array__task">
+							<h2 class="array__tittle">Задача 2</h2>
+							<p class="array__paragraph">let arr = ['Ваня', 'Іштван',];<br>
+								let arrOne = arr; <br>
+								arrOne.push('Оля');<br>
+								console.log(arr);<br>
+								let arrTwoo = arr;<br>
+								arrTwoo.splice(1, 1, 'Петро');<br>
+								console.log(arr);<br>
+								let arrThree = arr.splice(0, 1);<br>
+								console.log(arrThree);<br>
+								let arrFour = arr;<br>
+								arrFour.splice(0, 0, 'Марія', 'Павло');<br>
+								console.log(arr);</p>
+						</div>
+						<div class="array__task">
+							<h2 class="array__tittle">Задача 3</h2>
+							<p class="array__paragraph">let arr = ['Іван', 'Іштван', 'Олья',];<br>
+								console.log(arr);<br>
+								let newArr = arr.splice(1, 1);<br>
+								console.log(arr);<br>
+								console.log(newArr);</p>
+						</div>
+						<div class="array__task">
+							<h2 class="array__tittle">Задача 4</h2>
+							<p class="array__paragraph">let str = 'Ваня, Іштван, Оля';<br>
+								let arr = str.split(',');<br>
+								console.log(arr);</p>
+						</div>
+						<div class="array__task">
+							<h2 class="array__tittle">Задача 5</h2>
+							<p class="array__paragraph"><span>Помила</span>, змінна arrTwoo не була оголошена</p>
+						</div>
+					</div>
+				</div>
+				<div class="page__dom dom">
+					<div class="dom__container">
+						<h2 class="dom__main-tittle">DOM</h2>
+						<div data-say-hi="yes">Привіт!</div>
+						<ul>
+							<li>Корчі</li>
+							<li>Йончі</li>
+						</ul>
+						<div class="like"></div>
+						<div class="subscribe"></div>
+						<div class="like subscribe"></div>
+						<p>< li > текст < /li > потрапить після < li > пункт №2 < /li ></li></p>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
